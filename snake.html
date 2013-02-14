@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>.snake</title>
+  <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="snake.js"></script>
+
+  <style>
+    .title {
+      font-family: "Text Me One", sans-serif;
+      font-size: 40px;
+      text-align: center;
+    }
+    .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .row {
+      clear: both;
+    }
+
+    .square, .head, .segment, .apple {
+      float: left;
+      width: 20px;
+      height: 20px;
+      border: 1px solid white;
+    }
+
+    .head {
+      background: green;
+    }
+
+    .segment {
+      background: purple;
+    }
+
+    .apple {
+      background: red;
+    }
+
+    .gameboard {
+      position: absolute;
+      margin: 0 auto;
+      border: 1px solid black;
+      top: 60px;
+    }
+
+    .score {
+      position: absolute;
+      margin: 0 auto;
+      font-size: 40px;
+      font-family: "Text Me One", sans-serif;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="title">.snake</div>
+  <div class="score"></div>
+  <div class="instruction"></div>
+  <div class="gameboard clearfix"></div>
+
+</body>
+</html>

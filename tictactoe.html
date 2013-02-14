@@ -1,0 +1,113 @@
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="tictactoe.js"></script>
+
+  <style>
+    body {
+      font-family: "Text Me One", sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      cursor: default;
+    }
+
+    .main {
+      position: absolute;
+      border: 1px solid black;
+    }
+
+    .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .clearfix {
+      display: inline-block;
+    }  /* for IE/Mac */
+
+    .row {
+      clear: both;
+    }
+
+    .square, .xbox, .ybox {
+      cursor: default;
+      width: 80px;
+      height: 80px;
+      border: 2px solid black;
+      float: left;
+      background: white;
+    }
+
+    .square {
+      cursor: pointer;
+    }
+
+    .square:hover {
+      /*border: 2px solid yellow;*/
+      box-shadow: inset 0px 0px 15px green;
+    }
+
+    .xbox {
+      text-align: center;
+      color: blue;
+    }
+
+    .ybox {
+      text-align: center;
+      color: red;
+    }
+
+    .xbox p, .ybox p {
+      margin-top: 10px;
+      font-size: 50px;
+    }
+
+    .giveup {
+      cursor: pointer;
+      margin:0 auto;
+      margin-top: 300px;
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid black;
+      color: black;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 5px;
+    }
+
+    .giveup:hover {
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>.tic/tac/toe</h1>
+  <div class="main clearfix">
+    <div class="row">
+      <div id = '00' class="square"></div>
+      <div id = '01' class="square"></div>
+      <div id = '02' class="square"></div>
+    </div>
+    <div class="row">
+      <div id = '10' class="square"></div>
+      <div id = '11' class="square"></div>
+      <div id = '12' class="square"></div>
+    </div>
+    <div class="row">
+      <div id = '20' class="square"></div>
+      <div id = '21' class="square"></div>
+      <div id = '22' class="square"></div>
+    </div>
+  </div>
+
+  <div class="giveup">Giveup!</div>
+</body>
+</html>

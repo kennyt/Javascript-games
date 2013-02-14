@@ -1,0 +1,134 @@
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Text+Me+One' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="towers.js"></script>
+
+  <style>
+    body {
+      font-family: "Text Me One";
+      text-align: center;
+    }
+
+    .main {
+      /*position: absolute;*/
+      border: 1px solid black;
+      margin: 0 auto;
+    }
+
+    .tower, .destination, .clicked {
+      float: left;
+      width: 200px;
+      height: 250px;
+      border: 1px solid black;
+    }
+
+    .tower:hover{
+      box-shadow: 0px 0px 15px 2px green;
+    }
+
+    .destination:hover {
+      box-shadow: 0px 0px 15px 2px red;
+    }
+
+    .clicked {
+      /*box-shadow: inset 0px 0px 10px 2px green;*/
+      background: #B6DBE3;
+    }
+
+    .whitespace {
+      width: 40px;
+      height: 10px;
+    }
+
+    .block1, .block2, .block3, .block4, .block5 {
+      border-radius: 5px 5px 0 0;
+      height: 50px;
+    }
+
+    .block1 {
+      width: 40px;
+      margin-left: 80px;
+      background: #C9B1B1;
+    }
+
+    .block2 {
+      width: 80px;
+      /*height: 40px;*/
+      margin-left: 60px;
+      background: #C98F8F;
+    }
+
+    .block3 {
+      width: 120px;
+      /*height: 50px;*/
+      margin-left: 40px;
+      background: #C46C6C;
+    }
+
+    .block4 {
+      width: 160px;
+      /*height: 60px;*/
+      margin-left: 20px;
+      background: #A64B4B;
+    }
+
+    .block5 {
+      width: 200px;
+      /*height: 70px;*/
+      background: #781414;
+    }
+
+    .clearfix:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    .clearfix {
+      display: inline-block;
+    }  /* for IE/Mac */
+
+    .giveup {
+      cursor: pointer;
+      margin:0 auto;
+      margin-top: 20px;
+      width: 100px;
+      height: 40px;
+      border-radius: 10px;
+      border: 2px solid black;
+      color: black;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 5px;
+    }
+
+    .giveup:hover {
+      background: red;
+    }
+
+    .score {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>.towers</h1>
+  <div class="main clearfix">
+    <div class="tower" id="t1" >
+      <div class="block1"></div>
+      <div class="block2"></div>
+      <div class="block3"></div>
+      <div class="block4"></div>
+      <div class="block5"></div>
+    </div>
+    <div class="tower" id="t2" ></div>
+    <div class="tower" id="t3" ></div>
+  </div>
+  <div class="score">Click towers to move pieces.</div>
+  <div class="giveup">Giveup!</div>
+</body>
+</html>
